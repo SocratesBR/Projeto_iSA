@@ -8,7 +8,12 @@ const AuthStack = createNativeStackNavigator();
 function AuthStack(){
     return(
         <AuthStack.Navigator>
-            <AuthStack.Screen name="SignIn" component={SignIn} />
+            <AuthStack.Screen name="SignIn" component={SignIn} options={{
+                headerShown: false,
+            }}
+                
+                
+        />
 
             <AuthStack.Screen name="SignUp" component={SignUp} />
         </AuthStack.Navigator>
